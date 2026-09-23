@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉLÉGANCE | Luxury Perfumes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="index.html" class="brand-logo">
+            <div class="logo-symbol">E</div>
+            <div class="brand-text">
+                <span>ÉLÉGANCE</span>
+                <small>LUXURY PERFUMES</small>
+            </div>
+        </a>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#products" class="nav-link">Products</a>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">
+                    Collection <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="#women" class="dropdown-item">
+                        <img src="https://placehold.co/120x120/1a1a1a/c9a227?text=Women" alt="Women's fragrances">
+                        <span>Women</span>
+                    </a>
+                    <a href="#men" class="dropdown-item">
+                        <img src="https://placehold.co/120x120/1a1a1a/c9a227?text=Men" alt="Men's fragrances">
+                        <span>Men</span>
+                    </a>
+                    <a href="#unisex" class="dropdown-item">
+                        <img src="https://placehold.co/120x120/1a1a1a/c9a227?text=Unisex" alt="Unisex fragrances">
+                        <span>Unisex</span>
+                    </a>
+                    <a href="#oud-attar" class="dropdown-item">
+                        <img src="https://placehold.co/120x120/1a1a1a/c9a227?text=Oud" alt="Oud and attar">
+                        <span>Oud &amp; Attar</span>
+                    </a>
+                    <a href="#gift-sets" class="dropdown-item">
+                        <img src="https://placehold.co/120x120/1a1a1a/c9a227?text=Gifts" alt="Gift sets">
+                        <span>Gift Sets</span>
+                    </a>
+                    <a href="#new-arrivals" class="dropdown-item">
+                        <img src="https://placehold.co/120x120/1a1a1a/c9a227?text=New" alt="New arrivals">
+                        <span>New Arrivals</span>
+                    </a>
+                    <a href="#best-sellers" class="dropdown-item">
+                        <img src="https://placehold.co/120x120/1a1a1a/c9a227?text=Best" alt="Best sellers">
+                        <span>Best Sellers</span>
+                    </a>
+                    <a href="#limited-edition" class="dropdown-item">
+                        <img src="https://placehold.co/120x120/1a1a1a/c9a227?text=Limited" alt="Limited edition">
+                        <span>Limited Edition</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="icon-btn search-toggle" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <div class="theme-switcher">
+                <button class="icon-btn theme-toggle" aria-label="Choose theme">
+                    <i class="fa-solid fa-palette"></i>
+                </button>
+
+                <div class="theme-panel">
+                    <p class="theme-panel-title">Choose a palette</p>
+                    <div class="theme-swatches">
+                        <button class="theme-swatch active" data-theme="gold" style="--swatch:#c9a227" aria-label="Gold theme"></button>
+                        <button class="theme-swatch" data-theme="rose" style="--swatch:#c98a9c" aria-label="Rose theme"></button>
+                        <button class="theme-swatch" data-theme="emerald" style="--swatch:#3fae7f" aria-label="Emerald theme"></button>
+                        <button class="theme-swatch" data-theme="sapphire" style="--swatch:#4a7fd4" aria-label="Sapphire theme"></button>
+                        <button class="theme-swatch" data-theme="amethyst" style="--swatch:#a374d1" aria-label="Amethyst theme"></button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#cart" class="icon-btn" aria-label="Shopping Bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+
+            <a href="#account" class="icon-btn" aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <a href="#shop" class="nav-cta">Shop Now</a>
+
+            <button class="mobile-menu-btn" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="search-box">
+        <div class="search-inner">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search your favorite perfume..." id="searchInput">
+            <button class="close-search" aria-label="Close Search">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-nav-overlay"></div>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <span>Menu</span>
+            <button class="mobile-nav-close" aria-label="Close Menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+
+        <div class="mobile-collection">
+            <button class="mobile-collection-btn">
+                Collection <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="mobile-dropdown">
+                <a href="#women"><img src="https://placehold.co/60x60/1a1a1a/c9a227?text=W" alt="">Women</a>
+                <a href="#men"><img src="https://placehold.co/60x60/1a1a1a/c9a227?text=M" alt="">Men</a>
+                <a href="#unisex"><img src="https://placehold.co/60x60/1a1a1a/c9a227?text=U" alt="">Unisex</a>
+                <a href="#oud-attar"><img src="https://placehold.co/60x60/1a1a1a/c9a227?text=O" alt="">Oud &amp; Attar</a>
+                <a href="#gift-sets"><img src="https://placehold.co/60x60/1a1a1a/c9a227?text=G" alt="">Gift Sets</a>
+                <a href="#new-arrivals"><img src="https://placehold.co/60x60/1a1a1a/c9a227?text=N" alt="">New Arrivals</a>
+                <a href="#best-sellers"><img src="https://placehold.co/60x60/1a1a1a/c9a227?text=B" alt="">Best Sellers</a>
+                <a href="#limited-edition"><img src="https://placehold.co/60x60/1a1a1a/c9a227?text=L" alt="">Limited Edition</a>
+            </div>
+        </div>
+
+        <a href="#account">Account</a>
+        <a href="#cart">Shopping Bag</a>
+
+        <div class="mobile-theme">
+            <span class="mobile-theme-title">Theme</span>
+            <div class="theme-swatches">
+                <button class="theme-swatch active" data-theme="gold" style="--swatch:#c9a227" aria-label="Gold theme"></button>
+                <button class="theme-swatch" data-theme="rose" style="--swatch:#c98a9c" aria-label="Rose theme"></button>
+                <button class="theme-swatch" data-theme="emerald" style="--swatch:#3fae7f" aria-label="Emerald theme"></button>
+                <button class="theme-swatch" data-theme="sapphire" style="--swatch:#4a7fd4" aria-label="Sapphire theme"></button>
+                <button class="theme-swatch" data-theme="amethyst" style="--swatch:#a374d1" aria-label="Amethyst theme"></button>
+            </div>
+        </div>
+
+        <a href="#shop" class="mobile-cta">Shop Now</a>
+    </div>
+</header>
+
+<main class="hero" id="hero">
+
+    <div class="hero-slides">
+        <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1584841247175-4d766cefa018?auto=format&amp;fit=crop&amp;w=1920&amp;q=80')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1763987300634-7b0822cbf390?auto=format&amp;fit=crop&amp;w=1920&amp;q=80')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.pexels.com/photos/8501676/pexels-photo-8501676.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1498721425774-488298864da7?auto=format&amp;fit=crop&amp;w=1920&amp;q=80')"></div>
+    </div>
+
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+
+    <div class="hero-content">
+        <span class="hero-eyebrow">The New Fragrance Edit</span>
+        <h1 class="hero-title">A Scent That Defines You</h1>
+        <h2 class="hero-subtitle">Every Bottle, A Signature.</h2>
+        <p class="hero-desc">
+            Composed from rare botanicals, precious resins and the finest oud,
+            each fragrance is an invitation to be remembered — elegance,
+            captured in a single note.
+        </p>
+        <a href="#products" class="hero-cta">
+            <span>Explore Collection</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <button class="hero-arrow hero-arrow-prev" aria-label="Previous slide">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="hero-arrow hero-arrow-next" aria-label="Next slide">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <div class="hero-index">
+        <span class="hero-index-current">01</span>
+        <span class="hero-index-divider"></span>
+        <span class="hero-index-total">04</span>
+    </div>
+
+    <div class="hero-dots">
+        <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+        <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
